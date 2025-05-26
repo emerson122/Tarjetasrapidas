@@ -80,7 +80,10 @@ export default function Home() {
             <h3>{actual.pregunta}</h3>
             {actual.tipo === 'opcion_multiple' && (
               <ul>
-                {Object.entries(actual.opciones).map(([k, v]) => <li key={k}>{k}: {v}</li>)}
+          {Object.entries(actual.opciones as Record<string, string>).map(([k, v]) => (
+  <li key={k}>{k}: {v}</li>
+))}
+
               </ul>
             )}
             {mostrar && (
