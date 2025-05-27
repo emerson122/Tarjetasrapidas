@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "dominio": "Dominio 1",
+    "pregunta": "2+2",
+    "tipo": "respuesta_unica",
+    "respuesta": "4"
+  }
+]
